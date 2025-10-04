@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Student Portal</title>
+</head>
+<body>
+  <div class="nav-brand">
+        🎓
+        <h1>Student Portal</h1>
+      </div>
+  <header class="header">
+    <nav class="navbar">
+    
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="blog.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="announcements.html">Announcements</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section">
+      <h2>Welcome to the Student Portal</h2>
+      <p>
+        This portal provides access to school announcements, learning materials,
+        and contact support.
+      </p>
+
+      <!-- PROFILE PICTURE -->
+      <div class="profile-container">
+        <img src="jun.jpg" alt="" class="profile-pic">
+        <h3>EFREN B. MARQUEZ JR.</h3>
+        <p>BSIT - 3rd Year</p>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- ANNOUNCEMENTS SECTION -->
+  <section id="announcements" class="section">
+    <h2>Latest Announcements</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+          <th>Details</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>August 7, 2025</td>
+          <td>Start of Classes</td>
+          <td>Classes will begin on August 12, 2025.</td>
+          <td><img src="./images/classroom.png" alt="Class Start" /></td>
+        </tr>
+        <tr>
+          <td>August 1, 2025</td>
+          <td>Enrollment Deadline</td>
+          <td>Last day of enrollment is August 10, 2025.</td>
+          <td><img src="./images/enroll.png" alt="Enrollment" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+<!-- GOOGLE MAP SECTION -->
+<section class="google">
+  <h2>Location</h2>
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe width="900px" height="450px" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade" 
+        src="https://www.google.com/maps/embed/v1/place?q=holy%20central%20colleges%20inc.&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  .google {
+    text-align: center; /* Center text and map */
+    margin: 30px 0;
+  }
+
+  .mapouter {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    width: 100%;
+  }
+
+  .gmap_canvas iframe {
+    max-width: 100%; /* Para responsive */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+</style>
+
+<script>
+  const hamburger = document.getElementById('hamburger-btn');
+  const navLinks = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

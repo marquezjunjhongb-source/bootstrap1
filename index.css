@@ -1,0 +1,268 @@
+/* ==== GLOBAL ==== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+  color: #444444;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3, .blog-header-logo {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ==== HEADER ==== */
+.blog-header {
+  border-bottom: 2px solid #eee;
+}
+
+.blog-header-logo {
+  font-size: 2rem;
+  color: #222daf;
+  transition: color 0.3s;
+}
+
+.blog-header-logo:hover {
+  color: #ef233c;
+}
+.nav-s {
+  display: flex;
+  justify-content: center; /* para nasa gitna */
+  margin: 20px 0; /* optional spacing */
+  color: #222daf;
+}
+
+.nav-s .nav {
+  justify-content: center; /* i-override yung justify-content-end */
+}
+
+/* ==== FEATURED POST ==== */
+.featured-post {
+  background: linear-gradient(135deg, #ef233c, #d90429);
+  color: white;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.featured-post h1 {
+  font-size: 2.5rem;
+}
+
+.featured-post a {
+  background: white;
+  color: #ef233c;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+}
+
+.featured-post a:hover {
+  background: #42d225;
+  color: white;
+}
+
+/* ==== POST CARDS ==== */
+.card-custom {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-custom img {
+  border-bottom: 3px solid #ef233c;
+}
+
+.card-custom:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== SIDEBAR ==== */
+aside h4 {
+  font-weight: 600;
+  color: #2b2d42;
+}
+
+aside .p-4 {
+  border-radius: 10px;
+  background: #edf2f4;
+}
+
+/* === Blog Section === */
+.blog-post {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.blog-post-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.blog-post-title:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.blog-post-meta {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.blog-post p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #444;
+}
+
+.blog-post blockquote {
+  border-left: 4px solid #007bff;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #555;
+  margin: 1.5rem 0;
+  background: #f8f9fa;
+}
+
+/* === Sidebar === */
+aside h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+aside .p-4 {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(8, 35, 26, 0.05);
+}
+
+aside a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+aside a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* === Pagination === */
+.blog-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.blog-pagination .btn {
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.blog-pagination .btn-outline-primary:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.blog-pagination .btn-outline-secondary.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* === Global Container Tweaks === */
+.container {
+  max-width: 1100px;
+}
+
+h3.font-italic {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.bg-dark {
+    background: url("your-image.jpg") center center no-repeat;
+    background-size: cover; /* para laging buo ang image */
+}
+.blog-footer {
+  padding: 2rem 0;
+  color: #777;
+  text-align: center;  /* center align */
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+
+.blog-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.blog-footer a:hover {
+  text-decoration: underline;
+}
+/* Container styling */
+.col-md-6.px-0.mx-auto.text-center {
+  background: #f9f9f9;          /* light background */
+  padding: 30px;                /* spacing */
+  border-radius: 12px;          /* rounded edges */
+  box-shadow: 0 4px 5px rgba(0,0,0,0.1); /* soft shadow */
+  max-width: 1100px;            /* limit width */
+}
+
+/* Image styling */
+.col-md-6 img {
+  border-radius: 10px;          /* round corners */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.col-md-6 img:hover {
+  transform: scale(1.05);       /* zoom effect */
+}
+
+/* Title */
+.col-md-6 h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* Paragraph (lede) */
+.col-md-6 p.lead.my-3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Continue reading link */
+.col-md-6 p.lead.mb-0 a {
+  background: #007bff;          /* button look */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.col-md-6 p.lead.mb-0 a:hover {
+  background: #0056b3;          /* darker on hover */
+}
